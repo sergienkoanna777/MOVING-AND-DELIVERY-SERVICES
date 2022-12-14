@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    background-color: #e0d3d3;
+}
+#myVideo {
+    width: 100%;
+}
+
+.heading{
+display: flex;
+justify-content: center;
+}
+h1{
+    color: #F05454;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif; ;
+    padding: 30px;
+}
+.court{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text  {
+    
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    color: #30475e;
+    padding: 50px;
+    font-size: 20px;
+    
+}
+.text1{
+    padding-top: 3cm;
+}
+
+.expl2, .expl3, .expl {
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: #30475E;
+    font-size: 20px;
+    
+}
+.expl2{
+    padding-left: 5cm;
+}
+.expl3{
+    padding-right: 5cm;
+}
+.we{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+.photo-container-2 {
+    max-width: 520px;
+    width: 100%;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-container-2 img {
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-container-2 .photo-1 {
+    position: relative;
+    animation: rotate 10s linear 5s infinite;
+}
+.photo-container-2 .photo-2 {
+    position: absolute;
+    top: 0;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    } 
+    59.99999% {
+        transform: rotate(45deg) scale(3);
+        opacity: 0;
+        z-index: 1;
+    }   
+    60% {
+        opacity: 0;
+        z-index: -1;
+    }  
+    100% {
+        opacity: 1;
+    }  
+}
+
+h3{
+color:#F05454 ;
+font-size: 40px;
+font-family: 'Roboto', sans-serif;
+}
+hr{
+    border: 3px solid white;
+}
+
+.camion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.black{
+    color:#30475e ;
+    font-family: 'Roboto', sans-serif;
+}
+.family{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.langue{
+    display: flex;
+    justify-content: end;
+    padding-right: 2cm;
+    
+}
+.name{
+    color: rgb(245, 13, 13);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+@media all and (max-width: 800px){
+    h1, h3{
+        font-size: 25px;
+    }
+    
+    .text, .expl2, .expl3, .expl, .name {
+        font-size: 20px;
+    }
+    
+    .photo, .myvideo, .video1{
+        width: 100%;
+    }
+    
+    .text1{
+        padding-top: 0cm;
+        
+    }
+    .expl3,.expl2, .expl, .text{
+        padding: 0cm;
+    }
+    .name{
+        padding-right: 0cm;
+    }
+    .text, .expl3, .black,.expl2, .expl, .www {
+        padding-left: 1cm;
+        }
+}
+@media all and (max-width: 500px){
+    
+        h1, h3{
+            font-size: 20px;
+        }
+        
+        .text, .expl2, .expl3, .expl, .name {
+            font-size: 15px;
+        }
+       
+}
+
